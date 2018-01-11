@@ -63,7 +63,7 @@ Resources:
       Code:
         S3Bucket: quickstart-reference
         S3Key:
-          Fn::Sub: connect/integration/examples/latest/functions/packages/integration-test/integration-test.zip
+          Fn::Sub: connect/integration/examples/latest/functions/packages/integration-test/lambda.zip
   IntegrationTest:
     Type: Custom::IntegrationTest
     Version: '1.0'
@@ -104,7 +104,7 @@ Resources:
       Code:
         S3Bucket: quickstart-reference
         S3Key:
-          Fn::Sub: connect/integration/examples/latest/functions/packages/integration/integration.zip
+          Fn::Sub: connect/integration/examples/latest/functions/packages/integration/lambda.zip
   IntegrationFunctionPermission:
     Type: AWS::Lambda::Permission
     Properties:
