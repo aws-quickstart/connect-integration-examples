@@ -61,9 +61,8 @@ Resources:
       Runtime: python2.7
       Timeout: 30
       Code:
-        S3Bucket: quickstart-reference
-        S3Key:
-          Fn::Sub: connect/integration/examples/latest/functions/packages/integration-test/lambda.zip
+        S3Bucket: aws-quickstart
+        S3Key: connect-integration-examples/functions/packages/integration-test/lambda.zip
   IntegrationTest:
     Type: Custom::IntegrationTest
     Version: '1.0'
@@ -102,9 +101,8 @@ Resources:
           IntegrationEndpoint:
             Ref: IntegrationEndpoint
       Code:
-        S3Bucket: quickstart-reference
-        S3Key:
-          Fn::Sub: connect/integration/examples/latest/functions/packages/integration/lambda.zip
+        S3Bucket: aws-quickstart
+        S3Key: connect-integration-examples/functions/packages/integration/lambda.zip
   IntegrationFunctionPermission:
     Type: AWS::Lambda::Permission
     Properties:
