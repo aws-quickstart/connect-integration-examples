@@ -90,7 +90,7 @@ Resources:
     Type: AWS::Lambda::Function
     Properties:
       Handler: index.handler
-      Runtime: nodejs6.10
+      Runtime: nodejs10.x
       Description: Amazon Connect Example Integration Function
       MemorySize: 128
       Timeout: 30
